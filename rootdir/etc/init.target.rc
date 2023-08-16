@@ -126,6 +126,9 @@ on boot
 
     write /sys/block/sda/queue/wbt_lat_usec 75000
 
+    # Only owner can acces this node
+    chmod 440 /proc/net/unix
+
 service vendor.pd_mapper /vendor/bin/pd-mapper
     class core
     user system
