@@ -47,6 +47,9 @@ TARGET_NO_BOOTLOADER := true
 MALLOC_SVELTE := true
 MALLOC_SVELTE_FOR_LIBC32 := true
 
+# Display
+TARGET_GRALLOC_HANDLE_HAS_RESERVED_SIZE := true
+
 # Filesystem
 TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/configs/config.fs
 
