@@ -1,0 +1,9 @@
+ifeq (user,$(TARGET_BUILD_VARIANT))
+VENDOR_LOG_LEVEL=S
+else
+VENDOR_LOG_LEVEL=I
+endif
+
+PRODUCT_VENDOR_PROPERTIES += \
+    persist.log.tag.CHIUSECASE=$(VENDOR_LOG_LEVEL) \
+    persist.log.tag.HWUI=$(VENDOR_LOG_LEVEL)
