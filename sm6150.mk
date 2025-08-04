@@ -268,7 +268,7 @@ PRODUCT_VENDOR_PROPERTIES += \
     $(foreach tag,$(SPAMMY_LOG_TAGS),log.tag.$(tag)=E)
 endif
 
--include $(DEVICE_PATH)/vendor_logtag.mk
+-include $(COMMON_PATH)/vendor_logtag.mk
 
 # Media
 PRODUCT_COPY_FILES += \
