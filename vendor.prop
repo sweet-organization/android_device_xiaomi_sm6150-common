@@ -137,6 +137,7 @@ debug.sf.disable_backpressure=1
 debug.sf.enable_gl_backpressure=0
 debug.sf.defer_refresh_rate_when_off=1
 debug.sf.enable_hwc_vds=0
+debug.sf.enable_transaction_tracing=false
 debug.sdm.support_writeback=0
 debug.sf.hw=0
 debug.sf.predict_hwc_composition_strategy=0
