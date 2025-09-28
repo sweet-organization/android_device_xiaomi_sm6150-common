@@ -7,3 +7,7 @@ allow hal_power_default sysfs_touchpanel:dir search;
 allow hal_power_default sysfs_touchpanel:{ file lnk_file } rw_file_perms;
 
 allow hal_power_default proc:file { open };
+
+# Allow hal_power_default to read and write to KProfiles nodes
+allow hal_power_default sysfs_kprofiles:dir r_dir_perms;
+allow hal_power_default sysfs_kprofiles:file rw_file_perms;
