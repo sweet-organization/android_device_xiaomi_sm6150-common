@@ -293,9 +293,17 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.ipsec_tunnel_migration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.ipsec_tunnel_migration.xml
 
 # Overlay
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
+PRODUCT_PACKAGES += \
+    CarrierConfigOverlay \
+    DeviceAsWebcamOverlay \
+    DialerOverlay \
+    FrameworksResOverlay \
+    LineageSdkOverlay \
+    SettingsOverlay \
+    SettingsProviderOverlay \
+    SystemUIOverlay \
+    TelephonyOverlay \
+    WifiOverlay
 
 PRODUCT_ENFORCE_RRO_TARGETS += *
 
@@ -320,10 +328,6 @@ PRODUCT_COPY_FILES += \
 # QTI fwk-detect
 PRODUCT_PACKAGES += \
     libvndfwk_detect_jni.qti.vendor # Needed by CNE app
-
-# RIL
-PRODUCT_PACKAGES += \
-    CarrierConfigOverlay
 
 # Recovery
 PRODUCT_PACKAGES += \
